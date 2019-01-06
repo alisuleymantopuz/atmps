@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="CSharpFunctionalExtensions" Version="1.14.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Requests\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="vpos.seb\obj\Debug\netcoreapp2.2\vpos.seb.assets.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Responses\ResponseCodes.cs" />
+    <Compile Remove="Responses\IBalanceResponse.cs" />
+  </ItemGroup>
+</Project>
